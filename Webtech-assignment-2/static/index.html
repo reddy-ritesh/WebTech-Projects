@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="title">
+        <a href="http://www.ebay.com" target="_blank">
+    <img class='ebay' src="https://csci571.com/hw/hw6/images/eBayLogo.png" alt="eBayLogo"/>
+</a>
+
+        <h1 class ='shopping'>Shopping</h1>
+    </div>
+    <div class = form>
+    <form id="search" action="/results">
+    <table>
+        <!-- Row 1: Key Words -->
+        <tr>
+            <td>
+                <div class="Keywords">
+                    <label for="keywords"><b>Keywords</b><span style="color: red;"><b>*</b></span>:</label>
+                    <input type="text" id="keyword" required>
+                </div>
+            </td>
+        </tr>
+        <!-- Row 2: Price Range -->
+        <tr>
+            <td>
+                <div class="price">
+                    <label><b>Price Range:</b></label>
+                    <label for="minPrice">From </label>
+                    <input class="price-button" type="number" id="minPrice" min="0" step="0.01">
+                    <label for="maxPrice">to</label>
+                    <input class="price-button" type="number" id="maxPrice" min="0" step="0.01">
+                </div>
+            </td>
+        </tr>
+        <!-- Row 3: Condition -->
+<tr>
+    <td>
+        <div class="con">
+            <label><b>Condition:</b></label><br>
+            <input type="checkbox" id="new" value="1000"><label for="new">New</label>
+            <input type="checkbox" id="used" value="3000"><label for="used">Used</label>
+            <input type="checkbox" id="veryGood" value="4000"><label for="veryGood">Very Good</label>
+            <input type="checkbox" id="good" value="5000"><label for="good">Good</label>
+            <input type="checkbox" id="acceptable" value="6000"><label for="acceptable">Acceptable</label>
+        </div>
+    </td>
+</tr>
+
+        <!-- Row 5: Seller -->
+        <tr>
+            <td>
+                <div class="seller">
+                    <label><b>Seller:</b></label>
+                    <input type="checkbox" id="returnaccepted" value="returnaccepted"><label for="returnaccepted">Return Accepted</label>
+                </div>
+            </td>
+        </tr>
+        <!-- Row 6: Shipping -->
+        <tr>
+            <td>
+                <div class="ship">
+                    <label><b>Shipping:</b></label>
+                    <input type="checkbox" id="freeShipping"><label for="freeShipping">Free </label>
+                    <input type="checkbox" id="expeditedShipping"><label for="expeditedShipping">Expedited </label>
+                </div>
+            </td>
+        </tr>
+        <!-- Row 7: Sort By -->
+        <tr>
+            <td>
+                <div class="sort">
+                    <label for="sortBy"><b>Sort By:</b></label>
+                    <select id="sortBy">
+                        <option value="bestMatch" selected>Best Match</option>
+                        <option value="highestPrice">Price: highest first</option>
+                        <option value="highestPriceShipping">Price + Shipping: highest first</option>
+                        <option value="lowestPriceShipping">Price + Shipping: lowest first</option>
+                    </select>
+                </div>
+            </td>
+        </tr>
+        <!-- Row 8: Buttons -->
+        <tr>
+            <td>
+                <button id='clearBtn' class="form-button" type="reset">Clear</button>
+                <button id='searchBtn' class="form-button" type="submit">Search</button>
+            </td>
+        </tr>
+    </table>
+</form>
+
+    </div>
+
+    <!-- Results -->
+    <div id="results">
+   <!--  <b><span id="totalResults"></span> Results found for <i><span id="keywordSearched"></span></i></b> -->
+  
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</html>
+

@@ -1,0 +1,265 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.price-button{
+    width: 60px;
+    height: 25px;
+    font-size: 16px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:  center;
+}
+
+.ebay{
+    width: 200px;
+}
+
+.shopping{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.form-button{
+    display: inline-block;
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+    background-color: rgb(226, 225, 225);
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s;
+}
+
+.form-button:hover {
+    background-color: rgb(120, 206, 120);
+    color: white; 
+}
+
+#results{
+    width: 650px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.itemresults{
+    border: 1px solid black;
+}
+
+.found{
+    text-align: center;
+    font-size: 25px;
+}
+
+.title{
+    margin-right: 60px;
+}
+
+.thumbnail {
+    width: 100px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+}
+
+.item-details {
+    overflow: hidden;
+}
+
+#nores{
+    font-family: bold;
+    font-size: large;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+tr{
+    text-align: center;
+}
+
+td {
+    border: 1px solid black;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 10px;
+}
+
+.con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#results {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#showMoreBtn {
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    margin-top: 10px;
+    font-size: 2em;
+    color: #333;
+}
+
+.form {
+    margin: 20px;
+}
+
+.item {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-start;
+    background-color: #f1ececdd;
+    width: calc(100% - 20px);
+    margin-left: auto;
+    margin-right: auto;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+    border: 2px solid black;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.thumbnail img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%; 
+    min-height: 100%; 
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease-in-out;
+}
+
+#results hr{
+    margin-bottom: 10px;
+}
+
+.thumbnail:hover img {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+.item .item-details {
+    flex-grow: 1;
+}
+
+.item .item-details h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    width: 100%; 
+    max-width: 100%; 
+}
+
+.item .item-details p {
+   margin: 5px 0;
+  font-size: 12px;
+  text-align: left;
+}
+
+.item .item-details a:hover {
+    background-color: #ddd;
+}
+
+.item .item-details p.price {
+    font-weight: bold;
+}
+
+.redirect-icon {
+    width: 16px;
+    height: auto;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.top-rated-icon {
+    width: 16px;
+    height: auto;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+#details-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#details-container button{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#itemTable {
+    width: 750px;
+}
+
+#itemTable td{
+    text-align: left;
+}
